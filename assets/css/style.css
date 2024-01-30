@@ -31,3 +31,338 @@ a {
     margin: 0 auto;
     width: 1352px;
 }
+
+
+.btn{
+    font-family: var(--font-secondary);
+    color: var(--color-white);
+    font-weight: 700;
+    background: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    border-radius: 40px;
+    width: 100%;
+    height: auto;
+    padding: 20px 150px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: var(--color-primary);
+    background: var(--color-white);
+}
+
+.headline{
+    color: var(--color-black);
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+
+body{
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*header*/
+
+.header{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav{
+    box-shadow: 0 3px 6px var(--color-primary-shadow);
+}
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav__logo{
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.nav__links{
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    color: var(--color-grey);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.nav__link{
+    padding: 25px 50px;
+    transition: all .3s ease-in-out;
+}
+.nav__link:hover{
+    color: var(--color-black);
+    border-bottom: solid var(--color-primary) 3px;
+}
+.header__body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body__title,.body__text{
+    text-align: center;
+}
+.body__title{
+    font-size: var(--font-size-primary);
+    margin-top: 130px;
+}
+.body__text{
+    margin: 20px 0;
+}
+.body__btn {
+    max-width: 440px;
+    margin-top: 20px;
+}
+.body__img{
+    width: 100%;
+    height: auto;
+}
+
+/*main*/
+
+/* statistic*/
+
+.statistic{
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+}
+.statistic__title{
+    margin: 100px 0;
+}
+.statistic__cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.statistic__cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 0 90px;
+    max-width: 180px;
+
+
+}
+.statistic__cards .card__circle{
+    position: relative;
+    width: 63px;
+    height: 63px;
+    background: var(--color-redish);
+    background-position: center;
+    border-radius: 50%;
+    text-align: center;
+}
+.statistic__cards .card__img{
+    position: absolute;
+}
+.statistic__cards div:nth-child(2) .card__circle{
+    background: var(--color-primary);
+}
+.statistic__cards div:nth-child(2) .card__circle .card__img{
+    top: 10px;
+}
+.statistic__cards div:last-child .card__circle{
+    background: var(--color-green);
+}
+.statistic__cards .card__title{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.statistic__cards .card__text{
+    color: var(--color-grey);
+    margin-top: 10px;
+}
+
+/*benefits*/
+
+.benefits{
+    width: 100%;
+    height: auto;
+    background: var(--color-light-grey);
+    padding: 100px 0;
+}
+.container__boxs{
+    margin: 0 auto;
+    width: 1124px;
+}
+.benefits__boxs:not(.benefits__boxs:last-child){
+    width: 100%;
+    background: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 370px;
+    padding: 0 30px;
+}
+.benefits__boxs:not(:last-child){
+    margin-bottom: 40px;
+}
+.box__card, .box__images{
+    max-width: 420px;
+}
+.box__card {
+    text-align: left;
+}
+.box__card .card__border{
+    width: 320px;
+    height: auto;
+    border-bottom: 4px solid;
+}
+.benefits__boxs--Macbook .box__card .card__border{
+    border-color: var(--color-redish);
+}
+.benefits__boxs--iPhone .box__card .card__border{
+    border-color:  var(--color-primary);
+}
+.benefits__boxs--trumpet .box__card .card__border{
+        border-color: var(--color-green);
+}
+.box__images .box__img{
+    max-width: 380px;
+}
+.box__card .card__title{
+    max-width: 350px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.box__card .card__text {
+    font-family: var(--font-secondary);
+    padding-bottom: 50px;
+}
+.benefits__boxs--Macbook .box__images{
+    width: 180px;
+    height: 180px;
+    background: var(--color-redish);
+    transform: rotate(45deg);
+    border-radius: 41px;
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.benefits__boxs--Macbook  .box__images .box__img{
+    position: absolute;
+    transform: rotate(-45deg);
+    right: -57px;
+    bottom: -156px;
+}
+.benefits__boxs--iPhone .box__images{
+    width: 320px;
+    height: 320px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    position: relative;
+    margin-left: 40px;
+}
+.benefits__boxs--iPhone .box__images .box__img{
+    position: absolute;
+}
+/*.benefits__boxs--trumpet box__card{*/
+/*    width: 100%;*/
+/*    margin-right: 30px;*/
+/*}*/
+/*.benefits__boxs--trumpet box__images{*/
+/*    width: 100%;*/
+/*    margin-left: 30px;*/
+/*    background: var(--color-green);*/
+/*}*/
+.benefits__boxs .benefits__boxs--trumpet{
+    width: 100%;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+.boxs__single{
+    max-width: 630px;
+}
+
+/*pricing*/
+
+.pricing__title{
+    margin: 100px 0;
+}
+
+.pricing__cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.pricing__card{
+    max-width: 370px;
+    text-align: center;
+    padding-bottom: 80px;
+    border: 1px solid var(--color-redish);
+    border-radius: 18px;
+    /*position: relative;*/
+}
+.pricing__card--professional{
+    border: 1px solid var(--color-primary);
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+}
+.pricing__card--premium{
+    border: 1px solid var(--color-green);
+}
+
+.pricing__card .card__title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.pricing__card .card__price {
+    font-family: var(--font-secondary);
+    font-size: 46px;
+    font-weight: 300;
+    color: var(--color-redish);
+    padding: 10px;
+}
+.pricing__card--basic .card__price{
+    margin-bottom: 70px;
+}
+
+.pricing__card--professional .card__price{
+    color: var(--color-primary);
+}
+
+.pricing__card--premium .card__price {
+    color: var(--color-green);
+}
+
+.pricing__card .card__text{
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 60px;
+}
+
+.pricing__card .card__item{
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-tertiary);
+    margin: 10px 0;
+}
+.pricing__card .btn{
+    /*position: absolute;*/
+    top: 20px;
+    padding: 20px 50px 20px 50px;
+
+}
