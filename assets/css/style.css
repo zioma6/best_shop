@@ -40,7 +40,7 @@ a {
     background: var(--color-primary);
     box-shadow: 5px 10px 14px var(--color-primary-shadow);
     border-radius: 40px;
-    width: 100%;
+
     height: auto;
     padding: 20px 150px;
     cursor: pointer;
@@ -274,29 +274,43 @@ body{
 .benefits__boxs--iPhone .box__images .box__img{
     position: absolute;
 }
-/*.benefits__boxs--trumpet box__card{*/
-/*    width: 100%;*/
-/*    margin-right: 30px;*/
-/*}*/
-/*.benefits__boxs--trumpet box__images{*/
-/*    width: 100%;*/
-/*    margin-left: 30px;*/
-/*    background: var(--color-green);*/
-/*}*/
-.benefits__boxs .benefits__boxs--trumpet{
+
+.benefits__boxs.benefits__boxs--trumpet{
     width: 100%;
     height: 370px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
-.boxs__single{
+
+.benefits__boxs--trumpet .box__card {
     max-width: 630px;
+    width: 100%;
+    background: var(--color-white);
+    height: 370px;
+    margin-right: 60px;
+    padding: 70px 30px;
+}
+
+.benefits__boxs--trumpet .box__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 440px;
+    width: 100%;
+    background: var(--color-green);
+    height: 370px;
+}
+.benefits__boxs--trumpet .box__images .box__img{
+    max-width: 300px;
 }
 
 /*pricing*/
 
 .pricing__title{
     margin: 100px 0;
+}
+.pricing{
+    margin-bottom: 75px;
 }
 
 .pricing__cards{
@@ -312,9 +326,11 @@ body{
     padding-bottom: 80px;
     border: 1px solid var(--color-redish);
     border-radius: 18px;
-    /*position: relative;*/
+    flex: 1 0 auto;
+    position: relative;
 }
 .pricing__card--professional{
+    transform: scale(1.1);
     border: 1px solid var(--color-primary);
     box-shadow: 5px 10px 27px var(--color-primary-shadow);
 }
@@ -360,9 +376,28 @@ body{
     font-size: var(--font-size-tertiary);
     margin: 10px 0;
 }
+.pricing__card .card__item:not(.card__items:last-child){
+    margin-bottom: 25px;
+}
 .pricing__card .btn{
-    /*position: absolute;*/
-    top: 20px;
-    padding: 20px 50px 20px 50px;
+    position: absolute;
+    max-width: 160px;
+    top: 485px;
+    right: 110px;
+    padding: 10px 50px;
+}
 
+.card__item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../images/Ckechmark-1.svg");
+
+}
+
+
+.card__item--not::before {
+    background-image: url("../images/Close.svg");
 }
