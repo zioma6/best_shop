@@ -308,6 +308,8 @@ body{
     margin: 100px 0;
 }
 .pricing{
+    width: 100%;
+    max-width: 1266px;
     margin-bottom: 75px;
 }
 .pricing__cards{
@@ -391,6 +393,7 @@ body{
 /*contact*/
 
 .contact{
+    width: 100%;
     margin-top: 150px;
     display: flex;
     justify-content: center;
@@ -439,7 +442,9 @@ body{
 
 
 /*form*/
-
+.contact{
+    margin-bottom: 60px;
+}
 
 .form__input{
     display: block;
@@ -459,46 +464,78 @@ body{
     border: 1px solid var(--color-primary);
     box-shadow:  0 3px 6px var(--color-primary-shadow);
 }
-.form__label--checkbox {
-    color: var(--color-grey);
-    font-family: var(--font-secondary);
-    font-size: 12px;
-}
-.form__label--input{
+.form__label--input {
     font-family: var(--font-secondary);
     font-weight: 700;
     font-size: 11px;
     color: var(--color-primary);
 }
-.form__label--checkbox{
-     display: flex;
-     margin-bottom: 20px;
-     cursor: pointer;
-}
-.form__input--checkbox {
+.checkbox input {
     display: none;
 }
-.form__label--checkbox span{
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 20px;
+}
+.checkbox span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 22px;
-    height: 22px;
-    border: 1px solid var(--color-primary-shadow);
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--color-grey);
     border-radius: 8px;
+    flex-basis: 24px;
     flex-shrink: 0;
     flex-grow: 1;
-    margin-right: 10px;
+    margin-right: 15px;
+    cursor: pointer;
 }
-.form__label--checkbox span img{
+.checkbox span img {
     display: none;
 }
-.form__input--checkbox:checked ~span img {
-    display: inline-block;
-}
-.contact__form .btn{
+.checkbox__input:checked ~ span img {
     display: block;
-    outline: none;
-    width: 226px;
 }
 
+.contact__btn {
+    display: block;
+    outline: none;
+    border: none;
+    max-width: 230px;
+    height: auto;
+    font-family: var(--font-secondary);
+    color: var(--color-white);
+    font-weight: 700;
+    background: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    border-radius: 40px;
+    padding: 10px 50px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/*Foooter*/
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-light-grey);
+    padding: 20px 120px;
+}
+
+.footer__logo.nav__logo{
+    font-size: 26px;
+}
+
+.footer__cr{
+    font-family: var(--font-secondary);
+    font-size: 11px;
+    color: var(--color-grey);
+}
+.footer__twitter{
+    padding-right: 10px;
+}
