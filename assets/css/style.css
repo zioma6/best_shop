@@ -213,35 +213,35 @@ body{
 .benefits__boxs:not(:last-child){
     margin-bottom: 40px;
 }
-.box__card, .box__images{
+.box, .box__images{
     max-width: 420px;
 }
-.box__card {
+.box {
     text-align: left;
 }
-.box__card .card__border{
+.box .box__border{
     width: 320px;
     height: auto;
     border-bottom: 4px solid;
 }
-.benefits__boxs--Macbook .box__card .card__border{
+.benefits__boxs--Macbook .box .box__border{
     border-color: var(--color-redish);
 }
-.benefits__boxs--iPhone .box__card .card__border{
+.benefits__boxs--iPhone .box .box__border{
     border-color:  var(--color-primary);
 }
-.benefits__boxs--trumpet .box__card .card__border{
+.benefits__boxs--trumpet .box .box__border{
         border-color: var(--color-green);
 }
 .box__images .box__img{
     max-width: 380px;
 }
-.box__card .card__title{
+.box .box__title{
     max-width: 350px;
     text-align: left;
     margin-bottom: 30px;
 }
-.box__card .card__text {
+.box .box__text {
     font-family: var(--font-secondary);
     padding-bottom: 50px;
 }
@@ -280,7 +280,7 @@ body{
     justify-content: center;
 }
 
-.benefits__boxs--trumpet .box__card {
+.benefits__boxs--trumpet .box {
     max-width: 630px;
     width: 100%;
     background: var(--color-white);
